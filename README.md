@@ -4,7 +4,7 @@
 ```
 python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog
 ```
-测试
+训练+测试
 ```
 python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog --evaluate best_epoch_20_10.bin -num_proposals 20 -sampling_timesteps 10 -b 4
 ```
@@ -18,7 +18,7 @@ python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog --ev
 ```
 python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog
 ```
-测试
+训练+测试
 ```
 python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog --evaluate best_epoch_20_10.bin -num_proposals 20 -sampling_timesteps 10 -b 4
 ```

@@ -13,6 +13,7 @@ python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog --ev
 > if epoch >= args.save_emin and args.save_lmin <= losses_3d_valid[-1][0] * 1000 <= args.save_lmax and flag_best_20_10 == False:
     `epoch >= 70 and 41.10 <= losses_3d_valid[-1][0] * 1000 <= 41.25`
 
+epoch>=80则每20轮，生成一个best_epoch_{epoch}_{loss}.bin
 ### MPI-INF-3DHP
 训练
 ```
@@ -22,7 +23,7 @@ python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog
 ```
 python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog --evaluate best_epoch_20_10.bin -num_proposals 20 -sampling_timesteps 10 -b 4
 ```
-
+epoch>=80则生成best_epoch_20_10.bin
 ### HumanEva-I
 训练
 ```
@@ -34,6 +35,7 @@ python main_humaneva_gt.py -gpu 0,1 --nolog --evaluate best_epoch_1_1.bin --p2 -
 ```
 `best_epoch_1_1.bin`记得改为best_epoch_20_10.bin
 
+epoch>=980则每20轮，生成一个best_epoch_{epoch}_{loss}.bin
 ## 其他命令说明
 `-cf x`每多少轮生成一个.bin文件
 

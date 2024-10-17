@@ -1,5 +1,5 @@
-# DATASET
-## Human3.6M
+## DATASET
+### Human3.6M
 训练
 ```
 python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog
@@ -13,7 +13,7 @@ python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog --ev
 > if epoch >= args.save_emin and args.save_lmin <= losses_3d_valid[-1][0] * 1000 <= args.save_lmax and flag_best_20_10 == False:
     `epoch >= 70 and 41.10 <= losses_3d_valid[-1][0] * 1000 <= 41.25`
 
-## MPI-INF-3DHP
+### MPI-INF-3DHP
 训练
 ```
 python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog
@@ -23,7 +23,7 @@ python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog
 python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog --evaluate best_epoch_20_10.bin -num_proposals 20 -sampling_timesteps 10 -b 4
 ```
 
-## HumanEva-I
+### HumanEva-I
 训练
 ```
 python main_humaneva_gt.py -c checkpoint/model_humaneva_gt -gpu 0,1 --nolog -e 1000

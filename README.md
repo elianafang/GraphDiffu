@@ -33,3 +33,12 @@ python main_humaneva_gt.py -c checkpoint/model_humaneva_gt -gpu 0,1 --nolog -e 1
 python main_humaneva_gt.py -gpu 0,1 --nolog --evaluate best_epoch_1_1.bin --p2 --by-subject -e 1000
 ```
 `best_epoch_1_1.bin`记得改为best_epoch_20_10.bin
+
+## 其他命令说明
+`-cf x`每多少轮生成一个.bin文件
+
+`-e x`跑多少个epoch
+
+`--p2`
+
+`--by-subject`

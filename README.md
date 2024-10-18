@@ -31,7 +31,7 @@ python main_humaneva_gt.py -c checkpoint/model_humaneva_gt -gpu 0,1 --nolog -e 1
 ```
 测试
 ```
-python main_humaneva_gt.py -gpu 0,1 --nolog --evaluate best_epoch_1_1.bin --p2 --by-subject -e 1000
+python main_humaneva_gt.py -gpu 0,1 --nolog --evaluate best_epoch_1_1.bin --p2 --by-subject
 ```
 `best_epoch_1_1.bin`记得改为best_epoch_20_10.bin
 

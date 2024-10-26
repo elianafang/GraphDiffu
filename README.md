@@ -4,7 +4,7 @@
 ```
 python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog
 ```
-训练+测试
+测试
 ```
 python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog --evaluate best_epoch_20_10.bin -num_proposals 20 -sampling_timesteps 10 -b 4
 ```
@@ -19,7 +19,7 @@ epoch>=80则每20轮，生成一个best_epoch_{epoch}_{loss}.bin
 ```
 python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog
 ```
-训练+测试
+测试
 ```
 python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog --evaluate best_epoch_20_10.bin -num_proposals 20 -sampling_timesteps 10 -b 4
 ```
@@ -27,7 +27,7 @@ epoch>=80则生成best_epoch_20_10.bin
 ### HumanEva-I
 训练
 ```
-python main_humaneva_gt.py -c checkpoint/model_humaneva_gt -gpu 0,1 --nolog -e 1000
+python main_humaneva_gt.py -c checkpoint/model_humaneva_gt -gpu 0,1 --nolog -e 1000 -lrd 0.998
 ```
 测试
 ```

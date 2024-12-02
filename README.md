@@ -1,20 +1,27 @@
+**➢best_epoch_%d_%.2f.bin？**
+`best_epoch_1_1.bin`保存从训练开始到当前训练周期内损失值最小的权重文件，只记录一次；
+`best_epoch_20_10.bin`保存从训练开始到当前训练周期内损失值最小,并且是在特定区间内的权重文件，只记录一次。具体的，特定区间设定为：
+> if epoch >= args.save_emin and args.save_lmin <= losses_3d_valid[-1][0] * 1000 <= args.save_lmax and flag_best_20_10 == False:
+    `epoch >= 70 and 41.10 <= losses_3d_valid[-1][0] * 1000 <= 41.25`
+**➢这个文件里面的H20_K10是什么意思呀？**
+使用best_epoch_20_10.bin进行测试生成的结果。
+
 ## DATASET
 ### Human3.6M
+默认epoch>=80则每20轮，生成一个best_epoch_{epoch}_{loss}.bin
+
 训练
 ```
 python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog
 ```
 测试
 ```
-python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog --evaluate best_epoch_20_10.bin -num_proposals 20 -sampling_timesteps 10 -b 4
+python main.py -k cpn_ft_h36m_dbb -c checkpoint/model_h36m -gpu 0,1 --nolog --evaluate best_epoch_1_1.bin -num_proposals 20 -sampling_timesteps 10 -b 4
 ```
-`best_epoch_20_10.bin`只会记录一次，表示从训练开始到当前训练周期内损失值最小，并且是在特定区间内的权重文件。具体的，特定区间设定为：
 
-> if epoch >= args.save_emin and args.save_lmin <= losses_3d_valid[-1][0] * 1000 <= args.save_lmax and flag_best_20_10 == False:
-    `epoch >= 70 and 41.10 <= losses_3d_valid[-1][0] * 1000 <= 41.25`
-
-epoch>=80则每20轮，生成一个best_epoch_{epoch}_{loss}.bin
 ### MPI-INF-3DHP
+默认epoch>=80则生成best_epoch_20_10.bin
+
 训练
 ```
 python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog
@@ -23,8 +30,9 @@ python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog
 ```
 python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog --evaluate best_epoch_20_10.bin -num_proposals 20 -sampling_timesteps 10 -b 4
 ```
-epoch>=80则生成best_epoch_20_10.bin
+
 ### HumanEva-I
+默认epoch>=980则每20轮，生成一个best_epoch_{epoch}_{loss}.bin
 训练
 ```
 python main_humaneva_gt.py -c checkpoint/model_humaneva_gt -gpu 0,1 --nolog -e 1000 -lrd 0.998
@@ -33,9 +41,6 @@ python main_humaneva_gt.py -c checkpoint/model_humaneva_gt -gpu 0,1 --nolog -e 1
 ```
 python main_humaneva_gt.py -gpu 0,1 --nolog --evaluate best_epoch_1_1.bin --p2 --by-subject
 ```
-`best_epoch_1_1.bin`记得改为best_epoch_20_10.bin
-
-epoch>=980则每20轮，生成一个best_epoch_{epoch}_{loss}.bin
 ## 命令说明（arguments.py）
 | 命令                           | 默认值                        | 作用                                                       | 其他说明                                                    | 是否针对某个数据集  |
 |--------------------------------|-------------------------------|------------------------------------------------------------|-------------------------------------------------------------|--------------------|

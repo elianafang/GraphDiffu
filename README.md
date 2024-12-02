@@ -1,12 +1,16 @@
-**➢best_epoch_%d_%.2f.bin？**
+### ➢best_epoch_%d_%.2f.bin？
+
 `best_epoch_1_1.bin`保存从训练开始到当前训练周期内损失值最小的权重文件，只记录一次；
+
 `best_epoch_20_10.bin`保存从训练开始到当前训练周期内损失值最小,并且是在特定区间内的权重文件，只记录一次。具体的，特定区间设定为：
 > if epoch >= args.save_emin and args.save_lmin <= losses_3d_valid[-1][0] * 1000 <= args.save_lmax and flag_best_20_10 == False:
     `epoch >= 70 and 41.10 <= losses_3d_valid[-1][0] * 1000 <= 41.25`
-**➢这个文件里面的H20_K10是什么意思呀？**
+
+### ➢xxx_test_log_H20_K10.txt？
+
 使用best_epoch_20_10.bin进行测试生成的结果。
 
-## DATASET
+# DATASET
 ### Human3.6M
 默认epoch>=80则每20轮，生成一个best_epoch_{epoch}_{loss}.bin
 
@@ -28,7 +32,7 @@ python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog
 ```
 测试
 ```
-python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog --evaluate best_epoch_20_10.bin -num_proposals 20 -sampling_timesteps 10 -b 4
+python main_3dhp.py -c checkpoint/model_3dhp -gpu 0,1 --nolog --evaluate best_epoch_1_1.bin -num_proposals 20 -sampling_timesteps 10 -b 4
 ```
 
 ### HumanEva-I
@@ -41,7 +45,13 @@ python main_humaneva_gt.py -c checkpoint/model_humaneva_gt -gpu 0,1 --nolog -e 1
 ```
 python main_humaneva_gt.py -gpu 0,1 --nolog --evaluate best_epoch_1_1.bin --p2 --by-subject
 ```
-## 命令说明（arguments.py）
+# 评价指标
+| 指标       | 描述                                           | 作用                               |
+|------------|-----------------------------------------------|------------------------------------|
+| **MPJPE**  | 原始预测与真实坐标的误差，包含平移、旋转、缩放差异 | 评估姿态的整体预测误差             |
+| **P-MPJPE**| 对预测的 3D 关节坐标进行 Procrustes 对齐后再计算误差，消除了平移、旋转、缩放的影响 | 更关注姿态形状的一致性，排除全局因素 |
+
+# 命令说明（arguments.py）
 | 命令                           | 默认值                        | 作用                                                       | 其他说明                                                    | 是否针对某个数据集  |
 |--------------------------------|-------------------------------|------------------------------------------------------------|-------------------------------------------------------------|--------------------|
 | `-d`, `--dataset`              | 'humaneva'                    | 指定目标数据集                                              | 例如：`h36m` 或 `humaneva`                                   | 是，h36m或humaneva |

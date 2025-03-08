@@ -1,11 +1,5 @@
 # DSGDiffu: Dynamic and Static Prompt-Driven Diffusion with Graph Attention for 3D Human Pose Estimation
 
-Created by [Fangjing Li](https://openreview.net/profile?id=~Fangjing_Li1)，[Xinxin Ding](),[Yilei Guo](https://openreview.net/profile?id=~Yilei_Guo2),[Haiyang Liu](https://openreview.net/profile?id=~Haiyang_Liu3),[Jidong Yuan](https://openreview.net/profile?id=~Jidong_Yuan1),[Zhihai Wang](https://openreview.net/profile?id=~Zhihai_Wang2),[Diping Wang](https://openreview.net/profile?id=~Diping_Wang1),
-
-This repository contains the PyTorch implementation for DSGDiffu. (ICCV2025, Highlight)
-
-[[Project Page未设置网址]]() [[Paper未设置网址]]()
-
 ## Overview 
 
 <center>

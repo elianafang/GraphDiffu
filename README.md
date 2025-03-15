@@ -15,7 +15,7 @@
     <img width="638" alt="image" src="https://github.com/user-attachments/assets/7209abaf-996f-43a2-aafb-3ad4ada07a39" />
 </p>
 
-## Model Demo
+## Model Demo (It takes some time to load)
 <p align="center">
     <img src="https://github.com/user-attachments/assets/dfce6249-1575-4442-ab5b-b849d5dc16b9" alt="Eating"/><br>
     <img src="https://github.com/user-attachments/assets/dd7a1018-2173-47df-af82-33a3bad370ef" alt="Greeting"/><br>

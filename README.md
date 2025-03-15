@@ -1,7 +1,16 @@
 # DSGDiffu: Dynamic and Static Prompt-Driven Diffusion with Graph Attention for 3D Human Pose Estimation
 <p align="justify">
-    Accurate 3D human pose estimation requires an in-depth understanding of anatomical constraints and the dynamic interactions between joints, as even minor estimation errors in joint coupling can lead to significant mistakes in motion analysis. For instance, the coordinated movement between the knee and ankle during sprinting or the complex coupling between the shoulder and elbow during a throwing motion is crucial for realistic reconstruction. In this work, we propose GraphDiffu, a novel diffusion-based framework designed to automatically learn natural human motion patterns that enforce anatomical constraints and capture complex inter-joint interactions to enhance 3D human pose estimation. The core of GraphDiffu is the Neighborhood Relationship Interactor (NRI), which models the interactions between anatomically connected joints to simulate the coordinated activation of human joints, thereby avoiding erroneous motion estimations and reducing minor errors in joint coupling. To assist NRI, our framework employs Dual Semantic Prompts (DSP) that utilize dynamic prompts to capture the temporal sequence dependencies in motion through their memorability and static prompts to encode the spatial sequence dependencies of different body parts for stability. In addition, during the reverse denoising process we integrate a Time-Aware Modulator (TA) that adaptively adjusts the denoising intensity at each step to accommodate varying motion rhythms. Extensive experimental results in the wild show that our model outperforms the state of the art.
+    we propose <u>GraphDiffu</u>, a novel diffusion-based framework designed to automatically learn natural human motion patterns that enforce anatomical constraints and capture complex inter-joint interactions to enhance 3D human pose estimation. Extensive experimental results in the wild show that our model outperforms the <u>SOTA</u>.
 </p>
+
+
+| Dataset         | 2D Detector | MPJPE 🔵↓ | P-MPJPE 🔵↓ | PCK 🔴↑ | AUC 🔴↑ |
+|---------------|------------|-----------|-------------|---------|---------|
+| Human3.6M     | CPN        | -1.05 🔵↓ | -1.76 🔵↓   | —       | —       |
+| Human3.6M     | GT         | -1.21 🔵↓ | -4.84 🔵↓   | —       | —       |
+| MPI-INF-3DHP  | GT         | 25.8 (-0.4 🔵↓) | — | 99.14 (0.24 🔴↑) | 80.45 (0.45 🔴↑) |
+
+
 <p align="center">
     <img width="638" alt="image" src="https://github.com/user-attachments/assets/7209abaf-996f-43a2-aafb-3ad4ada07a39" />
 </p>

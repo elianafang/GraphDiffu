@@ -103,13 +103,13 @@ We set up the **MPI-INF-3DHP** dataset following the methodology of [P-STMO](htt
 📥 **[Download MPI-INF-3DHP Processed Data](https://drive.google.com/file/d/1zOM_CvLr4Ngv6Cupz1H-tt1A6bQPd_yg/view?usp=share_link)**  
 
 ---
+## Acknowledgements
 
-## Acknowledgement
+We acknowledge and appreciate the contributions of the following repositories, which have provided valuable insights for our work. We sincerely thank the authors for releasing their code.
 
-Our code refers to the following repositories. We thank the authors for releasing their codes.
+- [MotionBERT](https://github.com/Walter0807/MotionBERT)
+- [D3DP](https://github.com/paTRICK-swk/D3DP)  
+- [MixSTE](https://github.com/JinluZhang1126/MixSTE)  
+- [FinePOSE](https://github.com/PKU-ICST-MIPL/FinePOSE_CVPR2024)  
+- [KTPFormer](https://github.com/JihuaPeng/KTPFormer)  
 
-* [MotionDiffuse](https://github.com/mingyuan-zhang/MotionDiffuse)
-* [D3DP](https://github.com/paTRICK-swk/D3DP)
-* [MixSTE](https://github.com/JinluZhang1126/MixSTE)
-* [FinePOSE](https://github.com/PKU-ICST-MIPL/FinePOSE_CVPR2024)
-* [KTPFormer](https://github.com/JihuaPeng/KTPFormer)

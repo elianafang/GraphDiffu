@@ -4,11 +4,11 @@ A novel diffusion-based framework designed to automatically learn natural human 
 </p>
 
 
-| Dataset         | 2D Detector | MPJPE 🔵↓ | P-MPJPE 🔵↓ | PCK 🔴↑ | AUC 🔴↑ |
+| Dataset         | 2D Detector | MPJPE (Avg) ↓ | P-MPJPE (Avg) ↓ | PCK 🔺 | AUC 🔺 |
 |---------------|------------|-----------|-------------|---------|---------|
-| Human3.6M     | CPN        | -1.05 🔵↓ | -1.76 🔵↓   | —       | —       |
-| Human3.6M     | GT         | -1.21 🔵↓ | -4.84 🔵↓   | —       | —       |
-| MPI-INF-3DHP  | GT         | 25.8 (-0.4 🔵↓) | — | 99.14 (0.24 🔴↑) | 80.45 (0.45 🔴↑) |
+| Human3.6M     | CPN        | -1.05 ↓ | -1.76 ↓   | —       | —       |
+| Human3.6M     | GT         | -1.21 ↓ | -4.84 ↓   | —       | —       |
+| MPI-INF-3DHP  | GT         | -0.40 ↓ | — | 99.14 (0.24 🔺) | 80.45 (0.45 🔺) |
 
 <p align="center">
     <img width="638" alt="image" src="https://github.com/user-attachments/assets/7209abaf-996f-43a2-aafb-3ad4ada07a39" />

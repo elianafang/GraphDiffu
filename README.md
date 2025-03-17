@@ -22,6 +22,9 @@ A novel diffusion-based framework designed to automatically learn natural human 
     <img src="https://github.com/user-attachments/assets/82f0c7c7-2060-48fe-97d3-a982feb6a954" alt="Walking"/>
 </p>
 
+<img width="1344" alt="image" src="https://github.com/user-attachments/assets/e3607829-31c6-417c-8935-f9a77d6d7e81" />
+
+
 ---
 
 ## Train & Inference

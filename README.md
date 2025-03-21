@@ -11,18 +11,30 @@ A novel diffusion-based framework designed to automatically learn natural human 
 | MPI-INF-3DHP  | GT         | -0.40 ↓ | — | 99.14 (0.24 🔺) | 80.45 (0.45 🔺) |
 
 <p align="center">
-    <img width="638" alt="image" src="https://github.com/user-attachments/assets/7209abaf-996f-43a2-aafb-3ad4ada07a39" />
+  <img width="910" alt="image" src="https://github.com/user-attachments/assets/3ce89021-d998-4861-ac7b-c45fa43ee340" />
+  <img width="866" alt="image" src="https://github.com/user-attachments/assets/b40817dc-91ae-4b0e-8005-15439036169b" />
+
 </p>
 
 
 ## Model Demo (Loading takes a while😊)
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/dfce6249-1575-4442-ab5b-b849d5dc16b9" alt="Eating"/><br>
-    <img src="https://github.com/user-attachments/assets/dd7a1018-2173-47df-af82-33a3bad370ef" alt="Greeting"/><br>
-    <img src="https://github.com/user-attachments/assets/82f0c7c7-2060-48fe-97d3-a982feb6a954" alt="Walking"/>
+  <img src="https://github.com/user-attachments/assets/ca92b1c1-c798-4661-a9ac-55909cf7eb79" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/b0106c20-1e4a-442d-9cb9-e340501b4fa2" width="45%"/>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/667c8d4b-1419-40ab-8d97-598b21ee3f21" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/833dcb52-c044-47e0-be5d-b6ab1f205e15" width="45%"/>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e6ebbebe-9b4b-45fc-9396-ec0bdec6b83e" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/2f5c5215-f057-43ba-a92c-57279038f960" width="45%"/>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/78b296ed-132e-400f-8be3-ad9b9878f2bb" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/63517d44-88b6-45a6-9553-fd99a605d0da" width="45%"/>
 </p>
 
-<img width="1344" alt="image" src="https://github.com/user-attachments/assets/e3607829-31c6-417c-8935-f9a77d6d7e81" />
 
 
 ---

@@ -10,10 +10,8 @@ A novel diffusion-based framework designed to automatically learn natural human 
 | Human3.6M     | GT         | -1.21 ↓ | -4.84 ↓   | —       | —       |
 | MPI-INF-3DHP  | GT         | -0.40 ↓ | — | 99.14 (0.24 🔺) | 80.45 (0.45 🔺) |
 
-<p align="center">
-  <img width="910" alt="image" src="https://github.com/user-attachments/assets/3ce89021-d998-4861-ac7b-c45fa43ee340" />
-  <img width="866" alt="image" src="https://github.com/user-attachments/assets/b40817dc-91ae-4b0e-8005-15439036169b" />
-
+<p align="left">
+<img width="849" alt="image" src="https://github.com/user-attachments/assets/1418b519-5d46-4c5f-a99a-fa738c200aae" />
 </p>
 
 
@@ -34,8 +32,6 @@ A novel diffusion-based framework designed to automatically learn natural human 
   <img src="https://github.com/user-attachments/assets/78b296ed-132e-400f-8be3-ad9b9878f2bb" width="45%"/>
   <img src="https://github.com/user-attachments/assets/63517d44-88b6-45a6-9553-fd99a605d0da" width="45%"/>
 </p>
-
-
 
 ---
 
